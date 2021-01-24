@@ -3,7 +3,7 @@ import * as yup from 'yup'
 import {useFormik} from 'formik';
 
 type Props = {
-  initialValues: ;
+  initialValues: any;
   actions: {
     resolve: () => any;
     reject: () => any;
