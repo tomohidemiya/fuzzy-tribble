@@ -2,6 +2,7 @@ import { Grid } from '@material-ui/core';
 import React, {useState} from 'react';
 import Header from '../../components/Contents/Globals/Header';
 import SideNav from '../../components/Contents/Globals/SideNav';
+import MainContents from './MainContents';
 
 type Props = {}
 
@@ -28,8 +29,11 @@ const Top: React.FC<Props> = () => {
   return (
     <>
       <Header />
-      <Grid xs={2}>
+      <Grid xs={2} style={{height: '100%'}}>
         <SideNav open={open} navItems={navItems}/>
+      </Grid>
+      <Grid xs={10}>
+        <MainContents />
       </Grid>
     </>
   );
