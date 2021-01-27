@@ -26,9 +26,13 @@ const Top: React.FC<Props> = () => {
     }
   ]
 
+  const actions = {
+    clickMenu: () => (setOpen(!open))
+  }
+
   return (
     <>
-      <Header />
+      <Header actions={actions} />
       <Grid xs={2} style={{height: '100%'}}>
         <SideNav open={open} navItems={navItems}/>
       </Grid>
