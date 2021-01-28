@@ -42,11 +42,13 @@ const Top: React.FC<Props> = () => {
   return (
     <div style={{height: '100%'}}>
       <Header actions={actions} />
-      <Grid xs={2} style={{height: '100%'}}>
-        <SideNav open={open} navItems={navItems}/>
-      </Grid>
-      <Grid xs={10}>
-        <MainContents />
+      <Grid container style={{height: '100%'}}>
+        <Grid item xs={2} style={{height: '100%'}}>
+          <SideNav open={open} navItems={navItems}/>
+        </Grid>
+        <Grid item xs={10}>
+          <MainContents />
+        </Grid>
       </Grid>
     </div>
   );
