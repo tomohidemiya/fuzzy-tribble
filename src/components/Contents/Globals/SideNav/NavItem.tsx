@@ -1,6 +1,5 @@
 import { Grid } from '@material-ui/core';
-import React, { useState } from 'react';
-import { useMemo } from 'reactn';
+import React, { useState, useMemo } from 'react';
 import { NavItem } from '.';
 import {ExpandLess, ExpandMore} from '@material-ui/icons';
 

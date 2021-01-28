@@ -1,14 +1,9 @@
-import React, {setGlobal} from 'reactn';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {GlobalState} from './types/global';
 
-
-setGlobal<GlobalState>({
-  count: 0,
-})
 
 ReactDOM.render(
   <React.StrictMode>
