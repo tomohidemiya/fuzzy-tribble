@@ -12,7 +12,7 @@ type Props = {
 
 const Header: React.FC<Props> = ({actions}) => {
   return (
-    <Grid container  style={{height: '100%', backgroundColor: '#E4E4E4'}}>
+    <Grid container  style={{backgroundColor: '#E4E4E4'}}>
       <Grid item xs={2} style={{display: 'table', height: '100%'}}>
         <Menu fontSize="large" style={{margin: '16px', display: 'table-cell', verticalAlign: 'middle', cursor: 'pointer'}} onClick={actions.clickMenu}/>
       </Grid>

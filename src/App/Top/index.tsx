@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import Header from '../../components/Contents/Globals/Header';
 import SideNav from '../../components/Contents/Globals/SideNav';
 import MainContents from './MainContents';
+import {faShuttleVan, faBookmark, faSync, faClone} from '@fortawesome/free-solid-svg-icons';
 
 type Props = {}
 
@@ -10,14 +11,22 @@ const Top: React.FC<Props> = () => {
   const [open, setOpen] = useState(true)
   const navItems = [
     {
-      categoryName: 'メンション＆リアクション',
+      categoryIcon: faShuttleVan,
+      categoryName: '納品',
       navItems: [],
     },
     {
-      categoryName: 'お気に入り製品',
+      categoryIcon: faBookmark,
+      categoryName: '機器管理',
       navItems: [],
     },
     {
+      categoryIcon: faSync,
+      categoryName: '買い替え',
+      navItems: [],
+    },
+    {
+      categoryIcon: faClone,
       categoryName: 'カテゴリー',
       navItems: [
         '# 血液浄化',
@@ -31,7 +40,7 @@ const Top: React.FC<Props> = () => {
   }
 
   return (
-    <>
+    <div style={{height: '100%'}}>
       <Header actions={actions} />
       <Grid xs={2} style={{height: '100%'}}>
         <SideNav open={open} navItems={navItems}/>
@@ -39,7 +48,7 @@ const Top: React.FC<Props> = () => {
       <Grid xs={10}>
         <MainContents />
       </Grid>
-    </>
+    </div>
   );
 }
 
