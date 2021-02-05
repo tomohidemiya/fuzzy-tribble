@@ -6,6 +6,7 @@ import Profile from './Profile';
 export type NavItemProps = {
   categoryName: string;
   categoryIcon?: IconProp;
+  linkTo?: string;
   navItems: string[];
   accordion?: boolean;
 }

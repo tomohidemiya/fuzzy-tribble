@@ -13,16 +13,19 @@ const Top: React.FC<Props> = () => {
     {
       categoryIcon: faShuttleVan,
       categoryName: '納品',
+      linkTo: '/device/delivery',
       navItems: [],
     },
     {
       categoryIcon: faBookmark,
       categoryName: '機器管理',
+      linkTo: '/device/management',
       navItems: [],
     },
     {
       categoryIcon: faSync,
       categoryName: '買い替え',
+      linkTo: '/device/refurbishment',
       navItems: [],
     },
     {
