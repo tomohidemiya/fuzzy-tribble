@@ -1,8 +1,8 @@
 import { Grid, Typography } from '@material-ui/core';
 import React, { useMemo } from 'react';
 import { useHistory } from 'react-router-dom';
-import ProductCard from '../../components/Product/ProductCard';
-import Products from '../../services/Products';
+import ProductCard from '../../../components/Product/ProductCard';
+import Products from '../../../services/Products';
 
 const RecommendProduct: React.FC = () => {
   const recommendProducts = Products.getProductRecommends();

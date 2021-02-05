@@ -1,19 +1,13 @@
 import React from 'react';
 import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
-import Top from './App/Top';
-import MyPage from './App/MyPage';
-import Products from './App/Products';
-import Settings from './App/Settings';
+import DeviceManagement from './App/DeviceManagement';
 
 const Router: React.FC = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact={true} path='/' component={Top} />
-        <Route path='/mypage' component={MyPage} />
-        <Route path='/settings' component={Settings} />
-        <Route path='/products' component={Products} />
-        <Route component={() => <Redirect to='/' />} />
+        <Route path='/device' component={DeviceManagement} />
+        <Route component={() => <Redirect to='/device' />} />
       </Switch>
     </BrowserRouter>
   );

@@ -1,13 +1,13 @@
 import { Grid, Typography } from '@material-ui/core';
 import React, { useMemo } from 'react';
-import Products from '../../services/Products';
+import Products from '../../../services/Products';
 
-const CustomerQA: React.FC = () => {
+const Ads: React.FC = () => {
   const recommendProducts = Products.getProductRecommends();
 
   return (
     <main>
-      <Typography variant="h2" color="inherit">カスタマーQA</Typography>
+      <Typography variant="h2" color="inherit">メーカーWeb勉強会</Typography>
       <Grid container>
         {recommendProducts.map((item, idx) => (
           <Grid item xs={4} key={idx}>
@@ -19,4 +19,4 @@ const CustomerQA: React.FC = () => {
   );
 }
 
-export default CustomerQA;
+export default Ads;

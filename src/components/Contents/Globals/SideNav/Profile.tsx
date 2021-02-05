@@ -12,8 +12,8 @@ const SideNav: React.FC = () => {
     categoryName: 'Hisotsu病院',
     navItems: [
       {displayName: 'メッセージ', link: '/'},
-      {displayName: 'マイページ', link: '/mypage'},
-      {displayName: '設定', link: '/settings'},
+      {displayName: 'マイページ', link: '/device/mypage'},
+      {displayName: '設定', link: '/device/settings'},
     ]
   }
   const [expand, setExpand] = useState<boolean>(true);
