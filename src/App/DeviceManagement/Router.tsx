@@ -6,6 +6,7 @@ import Delivery from './Delivery';
 import Top from './Top';
 import Settings from './Settings';
 import MyPage from './MyPage';
+import Refurbishment from './Refurbishment';
 
 const baseUrl = '/device'
 
@@ -17,6 +18,7 @@ const Router: React.FC = () => {
       <Route path={`${baseUrl}/settings`} component={Settings} />
       <Route path={`${baseUrl}/mypage`} component={MyPage} />
       <Route path={`${baseUrl}/delivery`} component={Delivery} />
+      <Route path={`${baseUrl}/refurbishment`} component={Refurbishment} />
       <Route path={baseUrl} component={Top} />
       <Route component={() => <Redirect to={baseUrl} />} />
     </Switch>
